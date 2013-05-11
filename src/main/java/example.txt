@@ -1,22 +1,22 @@
 
 
-Senza:
+Without flashback:
 
 2013-05-10 17:25:49,717 | INFO  |  BEGIN fetchTokenLegaleDocByMessageId
 2013-05-10 17:25:55,999 | ERROR |  Ricerca fallita. msgId: '<654915668.1334672807.1368001634734liaspec01@zzz.it>': null - LD0999 - Errore interno - it.zzz.messages.ricercaDocumento.result.Eccezione@24eecb5c
 
 
-Con:
+With flashback:
 
 2013-05-10 17:25:49,717 | INFO  |  BEGIN fetchTokenLegaleDocByMessageId
 2013-05-10 17:25:55,998 | ERROR |  >>>>>>>>> FLASHBACK START >>>>>>>>>
 2013-05-10 17:25:49,717 | INFO  |  BEGIN fetchTokenLegaleDocByMessageId
 2013-05-10 17:25:49,718 | DEBUG |  Start unmarshaling
 2013-05-10 17:25:49,719 | DEBUG |  Completed unmarshaling
-*2013-05-10 17:25:49,719 | DEBUG |  Reading kdv doc 5666673
+2013-05-10 17:25:49,719 | DEBUG |  Reading kdv doc 5666673
 2013-05-10 17:25:49,818 | DEBUG |  messageId '<654915668.1334672807.1368001634734liaspec01@zzz.it>'
-*2013-05-10 17:25:49,818 | DEBUG |  Ref token null
-*2013-05-10 17:25:49,818 | DEBUG |  Read legaldoc document for messageID  '<654915668.1334672807.1368001634734liaspec01@zzz.it>', classeDocumentale: 'zzz-mail-search'
+2013-05-10 17:25:49,818 | DEBUG |  Ref token null
+2013-05-10 17:25:49,818 | DEBUG |  Read legaldoc document for messageID  '<654915668.1334672807.1368001634734liaspec01@zzz.it>', classeDocumentale: 'zzz-mail-search'
 2013-05-10 17:25:55,999 | ERROR |  <<<<<<<<<  FLASHBACK END  <<<<<<<<<
 2013-05-10 17:25:55,999 | ERROR |  Ricerca fallita. msgId: '<654915668.1334672807.1368001634734liaspec01@zzz.it>': null - LD0999 - Errore interno - it.zzz.messages.ricercaDocumento.result.Eccezione@24eecb5c
 
