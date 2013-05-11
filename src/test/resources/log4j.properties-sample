@@ -1,0 +1,13 @@
+
+log4j.loggerFactory=net.trz.peabody.FlashbackLoggerFactory
+log4j.factory.triggerLevel=ERROR
+log4j.factory.keepLoggedEvents=true
+log4j.factory.bufferSize=500
+log4j.factory.loggerList=it
+
+log4j.rootLogger=INFO, CONSOLE
+
+log4j.appender.CONSOLE=org.apache.log4j.ConsoleAppender
+log4j.appender.CONSOLE.layout=org.apache.log4j.PatternLayout
+log4j.appender.CONSOLE.layout.ConversionPattern=%d %x %C{1} %C.%M:%L : %m%n
+
