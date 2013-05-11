@@ -4,7 +4,7 @@ peabody - back in time logging
 Peabody is an extension for some logging frameworks to allow *back in time* logging.
 
 Usually you keep your logger to the INFO level, but as soon as something goes wrong 
-you need to raise the log level to DEBUG...just *before* something went wrong.
+you need to raise the log level to DEBUG just...*before* something went wrong.
 
 Peabody does exactly this: detects an error, goes back in time and rise the log 
 level for you.
