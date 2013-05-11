@@ -8,8 +8,8 @@
 		</layout>
 	</appender>
 	
-	<logger name="it.klever.kdv">
-		<level value="INFO"/>
+	<logger name="it.warn.kdv">
+		<level value="WARN"/>
 	</logger>
     
     <root>

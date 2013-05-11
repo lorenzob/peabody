@@ -4,11 +4,11 @@ public class Prova {
 
 	public static void main(String[] args) throws Exception {
 
-		Logger logger = Logger.getLogger("it.com.apress.Provaclass");
+		Logger logger = Logger.getLogger("it.com.prova");
 		logger.debug("DEBUG");
 
 		logger.info("INFO 1");
-		Logger logger3 = Logger.getLogger("it.zzz.kdv");
+		Logger logger3 = Logger.getLogger("it.warn.kdv");
 		logger3.debug("DEBUG 3");
 		
 		for (int i = 0; i < 1; i++) {
@@ -16,14 +16,14 @@ public class Prova {
 			logger3.info("INFO 2");
 		}
 		
-		//Thread.sleep(500);
+		Thread.sleep(500);
 		
 		Logger logger31 = Logger.getLogger("zzz");
 		logger31.debug("DEBUG ZZZ");
 		logger3.debug("DEBUG 3 tris");
 		aaa(logger3);
 
-		//Thread.sleep(100);
+		Thread.sleep(100);
 		
 		logger3.debug("DEBUG 5");
 		Logger logger2 = Logger.getLogger("err");
