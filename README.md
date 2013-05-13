@@ -47,5 +47,7 @@ With peabody (in bold infos otherwise lost):
 
 ### Performance
 
-todo
+For a typical application the overhead should be negligible. It accounts mostly to the Pattern formatting and time and location informations collection (if enabled) for all buffered messages.
+If you have a log line inside a tight loop you should probably consider to interely avoid the logger call by protecting the invocation checking on the current logger level (e.g. logger.isDebugEnabled()) anyway.
+If in doubt, check with a profiler.
 
